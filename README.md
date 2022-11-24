@@ -1,8 +1,8 @@
 ## To Start
 First create VENV
 ```
-python -m venv pt-ssm-env
-.\pt-ssm-env\Scripts\activate
+python -m venv ta-theo-env
+.\ta-theo-env\Scripts\activate
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
