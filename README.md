@@ -1,4 +1,10 @@
-## To Start
+
+# Getting Started with TA FASTAPI
+
+## Prequerities
+- Python 3.8
+
+## To Start (First Time)
 First create VENV
 ```
 python -m venv ta-theo-env
@@ -7,10 +13,16 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Then run
+Then run the app
 ```
 py main.py
 ```
 
+## To Start (After Instalation)
+```
+.\ta-theo-env\Scripts\activate
+py main.py
+```
+
 ## To Update Model
-Paste the model version
+Paste the models version
