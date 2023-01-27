@@ -40,7 +40,8 @@ async def ping():
 
 @app.get('/getPlantByName')
 async def getPlantByName(nama_umum: str):
-  return db.query(query=f"SELECT * FROM herbals WHERE nama_umum='{nama_umum}';")
+  real_nama_umum = nama_umum.replace("%20", " ")
+  return db.query(query=f"SELECT * FROM herbals WHERE nama_umum='{real_nama_umum}';")
 
 @app.post('/predict-daun-solo')
 async def predict(
